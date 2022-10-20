@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_to_98- Prints all numbers to 98
- * Use a comma followed by a space
+ * print_to_98- Prints all natural numbers from input to 98, in order seperated a comma followed by a space
  * @n: the number to be counting at.
  */
 void print_to_98(int n)
