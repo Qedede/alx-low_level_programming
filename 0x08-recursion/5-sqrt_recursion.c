@@ -7,23 +7,23 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
+	if (n == 1 || n == 0)
+		return (n);
 
-	return (_sqrt(1, n));
+	return (_sqrt(0, n));
 }
 
 /**
  * _sqrt - find square root
- * @prev: previous value
- * @root: square root value
+ * @n: previous value
+ * @x: square root value
  * Return: the square root
  */
-int _sqrt(int prev, int root)
+int _sqrt(int n, int x)
 {
-	if (prev > root)
+	if (n > x / 2)
 		return (-1);
-	else if (prev * prev == root)
-		return (prev);
-	return (_sqrt(prev + 1, root));
+	else if (n * n == x)
+		return (n);
+	return (_sqrt(n + 1, x));
 }
