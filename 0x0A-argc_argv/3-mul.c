@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlin.h>
+#include <stdlib.h>
 
 /**
  * main - program that prints its name, followed by a new line
@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int num_1, num_2, mul;
 
-	if (arg != 3)
+	if (argv != 3)
 		printf("Error\n");
 	else
 	{
